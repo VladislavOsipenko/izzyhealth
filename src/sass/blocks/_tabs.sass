@@ -1,0 +1,114 @@
+
+.tabs
+    margin-top: 150px
+    position: relative
+    &__bg
+        display: flex
+    &__img1
+        position: relative
+        z-index: 0
+    &__img2
+        position: absolute
+        right: 0
+        z-index: -1
+    &__container
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        width: 1140px
+    &__wrapper
+        position: relative
+.tabcontainer
+    display: flex
+    max-width: 1100px
+    justify-content: space-between
+.tabcontent
+    width: 491px
+    height: 625px
+    background: #FFFFFF
+    box-shadow: -12px 25px 53px rgba(186, 181, 216, 0.25)
+    border-radius: 85px 61px 227.5px
+    object-fit: cover
+    &__title
+        padding: 55px 0 0 43px
+        font-style: normal
+        font-weight: 400
+        font-size: 30px
+        line-height: 41px
+        color: #0D0C1E
+    &__descr
+        padding: 28px 0 0 43px
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 24px
+        color: #1BB6E6
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        padding: 37px 42px 0 42px
+    &__text
+        p
+            font-style: normal
+            font-weight: 700
+            font-size: 30px
+            line-height: 41px
+            color: #1F2343
+        div
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 22px
+            color: #1F2343
+    &__prc
+        padding-top: 20px
+        font-style: normal
+        font-weight: 700
+        font-size: 28px
+        line-height: 38px
+        text-align: right
+        color: #1462F9
+        span
+            font-size: 72px
+    &__price
+        padding: 64px 63px 0 50px
+        display: flex
+        justify-content: space-between
+    &__item
+        display: flex
+        flex-direction: column
+        &-text 
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 22px
+            color: #1F2343
+        &-money 
+            margin-top: 14px
+            font-style: normal
+            font-weight: 700
+            font-size: 21px
+            line-height: 16px 
+            text-align: center
+            color: #45496C
+.tabmenu
+    &__item
+        cursor: pointer
+        padding-top: 40px
+        display: flex
+        font-size: 24px
+        line-height: 33px
+        color: #1F2343
+        gap: 40px
+        align-items: center
+        transition: 0.3s all
+        &:first-child
+            padding-top: 0
+        &-active
+            transition: 0.3s all
+            font-weight: 700
+            font-size: 37px
+            line-height: 50px
+            color: #1F2343
+    
