@@ -1,0 +1,298 @@
+@media (max-width: 1200px)
+    .container
+        max-width: 960px 
+    .header
+        &__container
+            width: 960px  
+        &__descr
+            margin-top: 100px
+            grid-template-columns: repeat(1, auto)
+            text-align: center
+        &__items
+            padding-top: 30px
+            width: 470px
+            margin: 0 auto
+        &__wrapper
+            margin-top: 35px
+            display: flex
+            flex-direction: column
+        &__form
+            width: 480px
+            align-self: center
+
+    .tabs
+        &__container
+            max-width: 960px 
+    .medical
+        &__doctors
+            width: 450px
+    .combat
+        padding-top: 100px
+        &__wrapper
+            text-align: center
+            align-items: center
+            flex-direction: column
+        &__info
+            padding-top: 30px
+    .doctors
+        &__container
+            max-width: 960px 
+        &__wrapper
+            width: 760px
+
+
+@media (max-width: 992px)
+    .container
+        max-width: 720px
+    .header
+        position: relative
+        &__container
+            width: 720px
+        &__top
+            display: block
+            text-align: center
+            position: relative
+        &__login
+            margin: 0 auto
+            margin-top: 25px
+        &__menu
+            padding: 0
+            margin: 0
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            top: 0
+            left: -100%
+            width: 50%
+            height: 100%
+            padding: 20px 15px
+            background-color: rgba(0,0,0, .8)
+            transition: 0.6s all
+            z-index: 20
+            &_active 
+                left: 0
+        &__li
+            padding-right: 0
+            border: none
+            margin: 15px 0
+        &__link 
+            font-size: 20px
+            text-align: center
+        &__hamburger
+            display: block
+            position: absolute
+            right: 10px
+            top: 35px
+            right: 30px
+            width: 26px
+            height: 12px
+            span 
+                display: block 
+                height: 2px
+                width: 100%
+                background-color: #fff 
+                margin-bottom: 2px
+                transition: 0.5s all
+            &_active 
+                span 
+                    margin-bottom: -2px 
+                    &:nth-child(1)
+                        transform: translateY(3px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: translateY(3px) rotate(45deg)
+        &__form
+            width: 442px
+            margin: 0 auto
+    .medical
+        margin-top: 200px
+        &__wrapper
+            gap: 35px
+            flex-direction: column
+        &__title
+            text-align: center
+        &__subtitle
+            text-align: center
+        &__text
+            text-align: center
+        &__subtext
+            text-align: center
+        &__doctors
+            margin: 0 auto
+    .tabs
+        &__container
+            max-width: 720px
+    .tabcontent
+        width: 390px
+    .tabmenu
+        &__item
+            &-active 
+                font-size: 25px
+    .combat
+        margin-top: 0
+        padding-top: 0
+    .need
+        &__wrapper
+            justify-content: center
+            grid-template-columns: repeat(1, auto)
+    .doctors
+        height: 1800px
+        &__container
+            max-width: 720px 
+        &__wrapper
+            grid-template-columns: repeat(2, auto)
+            grid-template-rows: repeat(3, auto)
+            justify-content: center
+            column-gap: 100px
+            width: 720px
+    .footer
+        &__top
+            flex-direction: column
+            gap: 20px
+
+
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+    .header
+        &__container
+            max-width: 540px
+    .doctors
+        &__container
+            max-width: 540px
+        &__wrapper
+            padding-top: 80px
+            width: 510px
+    .tabs
+        min-height: 720px
+        &__container
+            max-width: 540px
+    .tabcontent
+        width: 315px
+        &__title
+            padding-left: 30px
+        &__descr
+            padding-left: 30px
+        &__wrapper
+            padding-left: 30px
+        &__price
+            gap:10px
+            padding-left: 30px
+    .tabmenu
+        &__item
+            font-size:20px
+    .need
+        margin-top: 120px
+
+    
+
+
+@media (max-width: 576px)
+    .container
+        max-width: 100%
+        padding: 0 10px
+    .header
+        min-height: 1300px
+        &__container
+            max-width: 100%
+            padding: 0 10px
+        &__login
+            margin-top: 15px
+            flex-direction: column
+            text-align: center
+            align-items: center
+            gap: 10px
+        &__descr
+            margin-top: 20px
+        &__items
+            padding-top: 20px
+            flex-direction: column
+            width: 300px
+        &__hamburger
+            right: 14px
+        &__item
+            padding-top: 15px
+            display: block
+            margin: 0 auto
+        &__text
+            font-size: 35px
+        &__form
+            margin-top: 15px
+            width: 300px
+            &-btn 
+                right: 0
+                width: 90px
+            input
+                width: 300px
+                padding-right: 0
+    .medical
+        margin-top: 0
+        &__title
+            font-size: 35px
+        &__doctors
+            width: 300px
+            flex-direction: column
+            text-aline: center
+            gap: 20px
+        &__rund
+            margin: 0 auto
+        &__item-descr
+            margin-top: 15px
+    .tabs
+        margin-top: 50px
+        &__container
+            max-width: 100%
+            padding: 0 10px
+    .tabcontainer
+        flex-direction: column
+        gap: 20px
+    .tabmenu
+        &__item
+            padding-top: 20px
+    .tabcontent
+        width: 300px
+        height: 570px
+        border-radius: 84px 61px 171.5px
+        &__price
+            padding-top: 20px
+    .combat
+        margin-top: 280px
+        &__title
+            font-size: 35px
+        &__info
+            grid-template-columns: repeat(1, auto)
+        &__block
+            &-one 
+                top: 0%
+            &-four
+                bottom: 0%
+    .need
+        margin-top: 70px
+        &__img
+            width: 300px
+            margin: 0 auto
+        &__title
+            font-size: 35px
+            text-align: center
+    .doctors
+        height: 2700px
+        &__container
+            max-width: 100%
+            padding: 0 10px
+        &__wrapper
+            grid-template-columns: repeat(1, auto)
+            width: 300px
+            padding-top: 50px
+            row-gap: 20px
+        &__title
+            padding-top: 70px
+            font-size: 35px
+    .footer
+        &__menu
+            flex-direction: column
+            width: 300px
+            gap:10px
+
+    
